@@ -1,3 +1,6 @@
+//https://scotch.io/tutorials/react-apps-with-the-google-maps-api-and-google-maps-react
+//https://developers.google.com/maps/documentation/javascript/directions
+
 import React, { Component } from 'react';
 import {
   Map,
@@ -11,14 +14,28 @@ const apiKey = 'AIzaSyA1bfMb-5j1rwtOb-fZQzrtFfa1MjA0MUc';
 
 export class Container extends Component {
 
-  fetchPlaces(mapProps, map) {
-    const {google} = mapProps;
-    const service = new google.maps.places.PlacesService(map);
-  }
+  state = {
+   showingInfoWindow: false,  //Hides or the shows the infoWindow
+   activeMarker: {},          //Shows the active marker upon click
+   selectedPlace: {}          //Shows the infoWindow to the selected place upon a marker
+  };
 
-  onMarkerClick(props, marker, e) {
-    console.log("marker click");
-  }
+
+  onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      ativeMarker: marker,
+      showingInfoWindow: true
+  });
+
+  onClose = props => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+          showingInfoWindow: false,
+          activeMarker: null
+      });
+    }
+  };
 
   render() {
     const style = {
@@ -26,27 +43,29 @@ export class Container extends Component {
       height: '100vh'
     }
     return (
-      <div style={style}>
+      <main style={style}>
       <Map google={this.props.google}
         initialCenter={{
           lat: 48.1215,
           lng: -123.434
         }}
-        onReady={this.fetchPlaces}
         //visible={false}
         zoom={14}
-        onClick={this.onMapClicked}
+
       >
         <Marker onClick={this.onMarkerClick}
                 name={'Current location'} />
 
-        <InfoWindow onClose={this.onInfoWindowClose}>
-            <div>
-              <h1>Carbon Cost</h1>
-            </div>
+        <InfoWindow
+          marker={this.state.activeMarker}
+          visible={this.state.showingInfoWindow}
+          onClose={this.onClose}>
+          <div>
+              <h3>{this.state.selectedPlace.name}</h3>
+          </div>
         </InfoWindow>
       </Map>
-      </div>
+      </main>
     );
   }
 }
