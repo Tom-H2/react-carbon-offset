@@ -1,5 +1,7 @@
 //https://scotch.io/tutorials/react-apps-with-the-google-maps-api-and-google-maps-react
 //https://developers.google.com/maps/documentation/javascript/directions
+//https://github.com/fullstackreact/google-maps-react
+//https://github.com/ecteodoro/google-distance-matrix
 
 import React, { Component } from 'react';
 import {
