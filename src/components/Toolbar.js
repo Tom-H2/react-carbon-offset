@@ -2,7 +2,7 @@
 import React from "react";
 import ViewToggleButton from './ViewToggleButton';
 import './Toolbar.css';
-import logo from './spiral-logo.jpg';
+import logo from './5A_letter_head.png';
 
 const toolbar = props => (
   <header className="toolbar">
@@ -10,7 +10,7 @@ const toolbar = props => (
       <div>
         <ViewToggleButton click={props.drawerClickHandler}/>
       </div>
-      <div className="toolbar_logo">Countering Carbon</div>
+      <div className="toolbar_logo">Project Wetland</div>
       <div className="spacer"></div>
       <button>
         <img src={logo} className="App-logo" alt="logo" />

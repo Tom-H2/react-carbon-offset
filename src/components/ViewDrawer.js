@@ -22,9 +22,45 @@ class ViewDrawer extends Component {
           placeholder = "Filter Venues"
         />
         <div className = "carbon-calculator">
-          Multiply distance by carbon constant for mode of transportaion.
+          Click on the Animal names below for more information!
           <p>
-            Calculate the carbon implications of your life and learn how to offset that carbon
+            Northern Harrier
+          </p>
+          <p>
+            Redwing Black Bird
+          </p>
+          <p>
+            Thatcher Ants
+          </p>
+          <p>
+            Raven
+          </p>
+          <p>
+            Coyote
+          </p>
+          <p>
+            Bald Eagle
+          </p>
+          <p>
+            Humming Bird
+          </p>
+          <p>
+            Mallard
+          </p>
+          <p>
+            Deer
+          </p>
+          <p>
+            Brown Bat
+          </p>
+          <p>
+            Garter Snake
+          </p>
+          <p>
+            Ike
+          </p>
+          <p>
+            Jibril
           </p>
           <a
             className="App-link"
@@ -32,7 +68,7 @@ class ViewDrawer extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Carbon Offsets
+            Outdoor Education at Five Acre School
           </a>
         </div>
         </nav>

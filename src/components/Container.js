@@ -4,6 +4,8 @@
 //https://github.com/ecteodoro/google-distance-matrix
 
 import React, { Component } from 'react';
+//import Distance from './Distance';
+
 import {
   Map,
   InfoWindow,
@@ -48,12 +50,11 @@ export class Container extends Component {
       <main style={style}>
       <Map google={this.props.google}
         initialCenter={{
-          lat: 48.1215,
-          lng: -123.434
+          lat: 48.13130,
+          lng: -123.18800
         }}
         //visible={false}
-        zoom={14}
-
+        zoom={18}
       >
         <Marker onClick={this.onMarkerClick}
                 name={'Current location'} />
