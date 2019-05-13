@@ -1,9 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Overview and Acknowledgements
-This React App is the work of the Explorer Class at Five Acre School. It is designed to showcase each student's "Animal Card" of an animal the student has identified while working in the school wetland during the spring of 2019. This query, and the radius of the initial API call are hardcoded in the App.js file on lines 118 to 121.
+This React App is the work of the Explorer Class at Five Acre School. It is designed to showcase each student's "Animal Card" of an animal the student has identified while working in the school wetland during the spring of 2019.
 
-
+The goal will be to have each student's "Animal Card" appear when clicked on in the ViewDrawer. The "Northern Harrier" file in the Animal-Cards folder is an example and a placeholder at this point.
 
 ### Instructions to open Countering Carbon
 The project repo can be accessed at [GitHub](https://github.com/Tom-H2/FEND-my-app-countering-carbon.git)
