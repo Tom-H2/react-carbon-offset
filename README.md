@@ -1,5 +1,29 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### Overview and Acknowledgements
+This React App is the work of the Explorer Class at Five Acre School. It is designed to showcase each student's "Animal Card" of an animal the student has identified while working in the school wetland during the spring of 2019. This query, and the radius of the initial API call are hardcoded in the App.js file on lines 118 to 121.
+
+
+
+### Instructions to open Countering Carbon
+The project repo can be accessed at [GitHub](https://github.com/Tom-H2/FEND-my-app-countering-carbon.git)
+
+- From the GitHub repo page clone/download repo and select download
+- That action puts a copy of the repo in the computer's download folder
+- Move that zipped folder from download to a C:// folder and unzipped (extract all)
+- In a terminal window navigate to the file location of unzipped folder
+- Entered "npm install react"
+- After that is complete, entered "npm start"
+- A new browser window opens program running at location [localhost:3000](http://localhost:3000)
+
+### Service Worker
+- ServiceWorker, included in the index.js file is used in production build only.
+To optimize Countering Carbon:
+  1. Run: `npm run build`
+  2. Deploy: `npm run deploy` to deploy to the address specified  
+- `npm run serve`
+- Local host 5000
+
 ## Available Scripts
 
 In the project directory, you can run:
